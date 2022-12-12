@@ -41,6 +41,18 @@
     ]
 
     // Add your code here
+    for(let i = 0; i < phonebook.length; i++){     
+      
+      console.log("Array Index: " + i)
+
+      if(phonebook[i].name==name){
+        const nameOutput=phonebook[i];
+        console.log(nameOutput);
+        para.innerHTML +=
+        '<li>Name: '+nameOutput.name+'</li><li>Number:' + nameOutput.number+'</li>'
+        break; 
+      }
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
