@@ -41,9 +41,11 @@
     ]
 
     // Add your code here
-    for(let i = 0; i < phonebook.length; i++){     
+    let i = 0;
+    while(i < phonebook.length){     
       
       console.log("Array Index: " + i)
+    
 
       if(phonebook[i].name==name){
         const nameOutput=phonebook[i];
@@ -52,6 +54,7 @@
         '<li>Name: '+nameOutput.name+'</li><li>Number:' + nameOutput.number+'</li>'
         break; 
       }
+      i++
     }
 
     // Don't edit the code below here!
